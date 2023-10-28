@@ -1,1 +1,2 @@
-# Projeto com o objetivo de aprender ReactJS
+Projeto feito usando React com o objetivo de aprender a utilizar a biblioteca
+
