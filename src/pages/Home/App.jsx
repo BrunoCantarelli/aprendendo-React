@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { v4 } from "uuid"; // para gerar chaves aleatorias
-import { AddButton, Container, Products, RemoveButton } from './styles'
+import { AddButton, Container, Products, RemoveButton } from './styles' //css
 
 function App() {
   const [produtos, setProdutos] = useState([]);
@@ -22,7 +22,7 @@ function App() {
         <h1>Lista de Compras</h1>
           <input placeholder="produto..." ref={inputRef} />
           <AddButton onClick={btnAdd}>Adicionar</AddButton>        
-        {produtos.map((produto) => (
+            {produtos.map((produto) => (
           <Products key={produto.id}>
             <p>{produto.nome}</p>
             <RemoveButton onClick={() => removeElement(produto.id)}>🗑️</RemoveButton>
